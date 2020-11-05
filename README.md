@@ -15,6 +15,6 @@ flake8-f-string is a flake8 plugin to warn formatting string `f''`.
 Error codes
 -----------
 
-This plugin is using the following error codes:
+This plugin uses the following error codes:
 
 - FS100 - passing callable objects as arguments for formatted string
