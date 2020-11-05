@@ -1,6 +1,6 @@
 ## Flake8-f-string
 
-flake8-f-string is a flake8 plugin to warn formatting string `f''`.
+**flake8-f-string** check and warn about [f-string](https://www.python.org/dev/peps/pep-0498/) issues.
 
 ### Getting started
     
