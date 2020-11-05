@@ -17,4 +17,4 @@ Error codes
 
 This plugin is using the following error codes:
 
-- ERG100 - passing callable objects as arguments for formatted string
+- FS100 - passing callable objects as arguments for formatted string

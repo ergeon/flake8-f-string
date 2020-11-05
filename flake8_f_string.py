@@ -7,7 +7,7 @@ if sys.version_info < (3, 8):
 else:
     import importlib.metadata as importlib_metadata
 
-ERG100 = 'ERG100 String formatting has callable object'
+FS100 = 'FS100 String formatting has callable object'
 
 
 class Visitor(ast.NodeVisitor):
@@ -17,7 +17,7 @@ class Visitor(ast.NodeVisitor):
     def visit_JoinedStr(self, node: ast.Call):
         for value in node.values:
             if hasattr(value, 'value') and isinstance(value.value, ast.Call):
-                self.errors.append((node.lineno, node.col_offset, ERG100))
+                self.errors.append((node.lineno, node.col_offset, FS100))
         self.generic_visit(node)
 
 
