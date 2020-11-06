@@ -4,7 +4,7 @@ from parameterized import parameterized
 
 from flake8_f_string import (
     Plugin,
-    FS100,
+    FS101,
 )
 
 
@@ -19,7 +19,7 @@ def results(s):
     "f'{Foo.bzz()}'",
 ])
 def test_fs_100_with_invalid(value):
-    assert results(value) == {f'1:0: {FS100}'}
+    assert results(value) == {f'1:0: {FS101}'}
 
 
 @parameterized.expand([

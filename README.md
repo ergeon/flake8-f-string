@@ -17,4 +17,4 @@ Error codes
 
 This plugin uses the following error codes:
 
-- FS100 - passing callable objects as arguments for formatted string
+- FS101 - passing callable objects as arguments for formatted string
