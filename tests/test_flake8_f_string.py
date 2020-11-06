@@ -4,7 +4,7 @@ from parameterized import parameterized
 
 from flake8_f_string import (
     Plugin,
-    ERG100,
+    FS101,
 )
 
 
@@ -18,8 +18,8 @@ def results(s):
     "f'{foo()}'",
     "f'{Foo.bzz()}'",
 ])
-def test_erg_100_with_invalid(value):
-    assert results(value) == {f'1:0: {ERG100}'}
+def test_fs_100_with_invalid(value):
+    assert results(value) == {f'1:0: {FS101}'}
 
 
 @parameterized.expand([
@@ -28,5 +28,5 @@ def test_erg_100_with_invalid(value):
     "f'{foo}'",
     "f'{foo.bzz}'",
 ])
-def test_erg_100_with_valid(value):
+def test_fs_100_with_valid(value):
     assert results(value) == set()
